@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdo7lxy1eo3ja"]
+
+[ext_resource type="Script" uid="uid://cpcviehuxvw4n" path="res://npc_ibu_pink.gd" id="1_oc6y2"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_oc6y2")
