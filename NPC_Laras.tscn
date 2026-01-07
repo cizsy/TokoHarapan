@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bb313rprv1r4v" path="res://Asset/character/laras/laras.png" id="2_pbsug"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wb1rg"]
+radius = 6.0
+height = 20.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q53he"]
 atlas = ExtResource("2_pbsug")
@@ -185,5 +187,7 @@ script = ExtResource("1_7vac5")
 shape = SubResource("CapsuleShape2D_wb1rg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Laras"]
+position = Vector2(2, -5.0000005)
+scale = Vector2(0.287, 0.2900337)
 sprite_frames = SubResource("SpriteFrames_hluun")
 animation = &"idle_up"
