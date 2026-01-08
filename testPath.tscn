@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1o7clbntspk7"]
 
-[ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://NPC_Laras.tscn" id="1_7s8ki"]
 [ext_resource type="Script" uid="uid://jnparf57mirm" path="res://path_follow_2d.gd" id="1_8k1k7"]
+[ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="1_ht3kd"]
 
 [sub_resource type="Curve2D" id="Curve2D_8k1k7"]
 _data = {
@@ -15,6 +15,7 @@ point_count = 7
 position = Vector2(0, 14.347832)
 scale = Vector2(1, 1.1913043)
 curve = SubResource("Curve2D_8k1k7")
+script = ExtResource("1_ht3kd")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2(28, -24)
@@ -22,6 +23,4 @@ rotation = -0.69634855
 loop = false
 script = ExtResource("1_8k1k7")
 
-[node name="Node2D" parent="Path2D/PathFollow2D" instance=ExtResource("1_7s8ki")]
-rotation = 0.69634855
-scale = Vector2(1, 0.83941615)
+[node name="Timer" type="Timer" parent="Path2D"]

@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
-@export var path_follow: PathFollow2D
-@export var speed := 50.0
+@onready var sprite = $AnimatedSprite2D # Sesuaikan nama ini dengan nodemu
 
-func _physics_process(delta):
-	if path_follow == null:
-		return
-
-	path_follow.progress += speed * delta
-	global_position = path_follow.global_position
+# Fungsi ini dipanggil oleh Script Sutradara di atas
+func atur_visual(arah_gerak: Vector2):
+	# Kalau gerak ke kiri (X negatif), balik gambarnya
+	if arah_gerak.x < -0.1:
+		sprite.flip_h = true
+	# Kalau gerak ke kanan (X positif), jangan dibalik
+	elif arah_gerak.x > 0.1:
+		sprite.flip_h = false
