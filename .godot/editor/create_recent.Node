@@ -1,3 +1,6 @@
+Node2D
+Timer
+Camera2D
 PathFollow2D
 Path2D
 TileMapLayer
@@ -6,9 +9,6 @@ AnimatedSprite2D
 NavigationRegion2D
 CharacterBody2D
 StaticBody2D
-Node2D
 TextEdit
 ColorRect
 Sprite2D
-Area2D
-Node

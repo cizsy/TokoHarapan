@@ -1,1 +1,5 @@
+res://testPath.tscn
 res://laras.gd
+res://npc_laras.gd
+res://path_follow_2d.gd
+res://NPC_Laras.tscn

@@ -191,3 +191,5 @@ position = Vector2(2, -5.0000005)
 scale = Vector2(0.287, 0.2900337)
 sprite_frames = SubResource("SpriteFrames_hluun")
 animation = &"idle_up"
+
+[node name="Camera2D" type="Camera2D" parent="Laras"]
