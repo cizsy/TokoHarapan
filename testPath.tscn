@@ -1,26 +1,27 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1o7clbntspk7"]
 
-[ext_resource type="Script" uid="uid://jnparf57mirm" path="res://path_follow_2d.gd" id="1_8k1k7"]
-[ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="1_ht3kd"]
+[ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="1_8k1k7"]
+[ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://NPC_Laras.tscn" id="2_ht3kd"]
 
-[sub_resource type="Curve2D" id="Curve2D_8k1k7"]
+[sub_resource type="Curve2D" id="Curve2D_0uw8b"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 28, -24, 0, 0, 0, 0, 89, -75, 0, 0, 0, 0, 166, -48, 0, 0, 0, 0, 175, 40, 0, 0, 0, 0, 77, 38, 0, 0, 0, 0, 10, 19.014595, 0, 0, 0, 0, 28, -24)
+"points": PackedVector2Array(0, 0, 0, 0, 567, 201, 0, 0, 0, 0, 568, 179, 0, 0, 0, 0, 594, 176, 0, 0, 0, 0, 595, 144, 0, 0, 0, 0, 596, 125, 0, 0, 0, 0, 621, 120, 0, 0, 0, 0, 650, 123, 0, 0, 0, 0, 691, 124, 0, 0, 0, 0, 714, 121, 0, 0, 0, 0, 599, 116, 0, 0, 0, 0, 609, 74, 0, 0, 0, 0, 628, 62, 0, 0, 0, 0, 670, 62, 0, 0, 0, 0, 704, 62, 0, 0, 0, 0, 758, 62, 0, 0, 0, 0, 612, 63, 0, 0, 0, 0, 569, 81, 0, 0, 0, 0, 549, 84, 0, 0, 0, 0, 567, 201)
 }
-point_count = 7
+point_count = 19
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Path2D" type="Path2D" parent="."]
-position = Vector2(0, 14.347832)
-scale = Vector2(1, 1.1913043)
-curve = SubResource("Curve2D_8k1k7")
-script = ExtResource("1_ht3kd")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(28, -24)
-rotation = -0.69634855
-loop = false
+[node name="path_NPC" type="Path2D" parent="."]
+z_index = 3
+curve = SubResource("Curve2D_0uw8b")
 script = ExtResource("1_8k1k7")
+npc_scene = ExtResource("2_ht3kd")
 
-[node name="Timer" type="Timer" parent="Path2D"]
+[node name="PathFollow2D" type="PathFollow2D" parent="path_NPC"]
+position = Vector2(567, 201)
+rotation = -1.5253731
+
+[node name="Timer" type="Timer" parent="path_NPC"]
+
+[node name="Laras" parent="path_NPC" instance=ExtResource("2_ht3kd")]
+z_index = 5

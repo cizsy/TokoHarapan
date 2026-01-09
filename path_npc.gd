@@ -16,6 +16,7 @@ var active_npc = null
 
 func _ready():
 	path_follow.loop = false
+	path_follow.rotates = false
 	timer.timeout.connect(_lanjut_jalan)
 	
 	# Tunggu sedikit agar scene siap
@@ -51,19 +52,14 @@ func _physics_process(delta):
 				timer.start(1.5)
 		
 		State.PULANG:
-			# Pastikan NPC punya properti velocity
-			if active_npc.has_method("set_velocity"):
 				var arah = (exit_position - active_npc.global_position).normalized()
-				active_npc.set_velocity(arah * speed)
-			else:
-				# Alternatif: gerakkan langsung
-				var arah = (exit_position - active_npc.global_position).normalized()
-				active_npc.position += arah * speed * delta
+				active_npc.velocity = arah * speed
+				active_npc.move_and_slide()  # NPC akan bergerak otomatis di physics_process
 			
-			if active_npc.global_position.distance_to(exit_position) < 10:
-				active_npc.queue_free()
-				active_npc = null
-				current_state = State.KOSONG
+				if active_npc.global_position.distance_to(exit_position) < 10:
+					active_npc.queue_free()
+					active_npc = null
+					current_state = State.KOSONG
 	
 	# Animasi
 	var arah_gerak = active_npc.global_position - old_pos
