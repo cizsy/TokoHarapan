@@ -1,14 +1,14 @@
+CollisionShape2D
+Area2D
+Marker2D
 Timer
 PathFollow2D
 Path2D
 Node2D
 Camera2D
 TileMapLayer
-CollisionShape2D
 AnimatedSprite2D
 NavigationRegion2D
 CharacterBody2D
 StaticBody2D
 TextEdit
-ColorRect
-Sprite2D

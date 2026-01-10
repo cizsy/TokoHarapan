@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://ch0txgx1ckrlc"]
+[gd_scene load_steps=23 format=4 uid="uid://ch0txgx1ckrlc"]
 
 [ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://main.tscn" id="1_epcg3"]
 [ext_resource type="Texture2D" uid="uid://cfufe5jufyj6s" path="res://Asset/rumah/TopDownHouse_FloorsAndWalls.png" id="4_6ien3"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://btheh8qoysdjg" path="res://Asset/toko/rak miring fixed crop.png" id="7_d72r0"]
 [ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="8_4b01b"]
 [ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://NPC_Laras.tscn" id="9_q41pj"]
+[ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://stop_point.gd" id="10_7fk30"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8oxt"]
 size = Vector2(72, 43.5)
@@ -484,9 +485,12 @@ sources/0 = SubResource("TileSetAtlasSource_d72r0")
 
 [sub_resource type="Curve2D" id="Curve2D_d72r0"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 567, 201, 0, 0, 0, 0, 568, 179, 0, 0, 0, 0, 594, 176, 0, 0, 0, 0, 595, 144, 0, 0, 0, 0, 596, 125, 0, 0, 0, 0, 621, 120, 0, 0, 0, 0, 650, 123, 0, 0, 0, 0, 691, 124, 0, 0, 0, 0, 714, 121, 0, 0, 0, 0, 599, 116, 0, 0, 0, 0, 609, 74, 0, 0, 0, 0, 628, 62, 0, 0, 0, 0, 670, 62, 0, 0, 0, 0, 704, 62, 0, 0, 0, 0, 758, 62, 0, 0, 0, 0, 612, 63, 0, 0, 0, 0, 569, 81, 0, 0, 0, 0, 549, 84)
+"points": PackedVector2Array(0, 0, 0, 0, 566, 207, 0, 0, 0, 0, 565, 176, 0, 0, 0, 0, 598, 175, 0, 0, 0, 0, 595, 126, 0, 0, 0, 0, 659, 128, 0, 0, 0, 0, 776, 126, 0, 0, 0, 0, 776, 112, 0, 0, 0, 0, 596, 112, 0, 0, 0, 0, 596, 67, 0, 0, 0, 0, 651, 67, 0, 0, 0, 0, 760, 67, 0, 0, 0, 0, 760, 55, 0, 0, 0, 0, 678, 55, 0, 0, 0, 0, 589, 55, 0, 0, 0, 0, 590, 89, 0, 0, 0, 0, 548, 89, 0, 0, 0, 0, 548, 176, 0, 0, 0, 0, 559, 182, 0, 0, 0, 0, 565, 176)
 }
-point_count = 18
+point_count = 19
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5n7yi"]
+radius = 3.0
 
 [node name="main_toko" type="Node2D"]
 
@@ -604,10 +608,17 @@ script = ExtResource("8_4b01b")
 npc_scene = ExtResource("9_q41pj")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="path_NPC"]
-position = Vector2(567, 201)
-rotation = -1.5253731
+position = Vector2(566, 207)
+rotation = -1.6030432
 
 [node name="Timer" type="Timer" parent="path_NPC"]
 
 [node name="Laras" parent="path_NPC" instance=ExtResource("9_q41pj")]
 z_index = 5
+
+[node name="stopPoint" type="Area2D" parent="path_NPC"]
+script = ExtResource("10_7fk30")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="path_NPC/stopPoint"]
+position = Vector2(596, 130)
+shape = SubResource("CircleShape2D_5n7yi")
