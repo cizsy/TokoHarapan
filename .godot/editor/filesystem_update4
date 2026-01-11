@@ -1,4 +1,8 @@
-res://toko.tscn
-res://laras.gd
-res://stop_point.gd
 res://path_npc.gd
+res://laras.gd
+res://NPC_Laras.tscn
+res://rumah.tscn
+res://toko.tscn
+res://main.tscn
+res://path_follow_2d.gd
+res://npc_controller.gd

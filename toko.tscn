@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://ch0txgx1ckrlc"]
+[gd_scene load_steps=24 format=4 uid="uid://ch0txgx1ckrlc"]
 
 [ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://main.tscn" id="1_epcg3"]
 [ext_resource type="Texture2D" uid="uid://cfufe5jufyj6s" path="res://Asset/rumah/TopDownHouse_FloorsAndWalls.png" id="4_6ien3"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cwj6twpwk3al2" path="res://Asset/toko/rak miring fixed .png" id="6_d72r0"]
 [ext_resource type="Texture2D" uid="uid://btheh8qoysdjg" path="res://Asset/toko/rak miring fixed crop.png" id="7_d72r0"]
 [ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="8_4b01b"]
+[ext_resource type="Script" uid="uid://coc713dca6smr" path="res://npc_controller.gd" id="9_5n7yi"]
 [ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://NPC_Laras.tscn" id="9_q41pj"]
 [ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://stop_point.gd" id="10_7fk30"]
 
@@ -15,13 +16,13 @@
 size = Vector2(72, 43.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ien3"]
-size = Vector2(66, 22.125)
+size = Vector2(66, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ofxu"]
 size = Vector2(72, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_elsha"]
-size = Vector2(75, 22)
+size = Vector2(75, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d72r0"]
 size = Vector2(45.75, 13)
@@ -483,49 +484,53 @@ texture = ExtResource("4_6ien3")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_d72r0")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_5n7yi"]
+radius = 3.0
+
 [sub_resource type="Curve2D" id="Curve2D_d72r0"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 566, 207, 0, 0, 0, 0, 565, 176, 0, 0, 0, 0, 598, 175, 0, 0, 0, 0, 595, 126, 0, 0, 0, 0, 659, 128, 0, 0, 0, 0, 776, 126, 0, 0, 0, 0, 776, 112, 0, 0, 0, 0, 596, 112, 0, 0, 0, 0, 596, 67, 0, 0, 0, 0, 651, 67, 0, 0, 0, 0, 760, 67, 0, 0, 0, 0, 760, 55, 0, 0, 0, 0, 678, 55, 0, 0, 0, 0, 589, 55, 0, 0, 0, 0, 590, 89, 0, 0, 0, 0, 548, 89, 0, 0, 0, 0, 548, 176, 0, 0, 0, 0, 559, 182, 0, 0, 0, 0, 565, 176)
 }
 point_count = 19
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_5n7yi"]
-radius = 3.0
-
 [node name="main_toko" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_epcg3")]
 z_index = 3
-position = Vector2(615, 105)
+position = Vector2(580, 111)
 
 [node name="furniture" type="Node2D" parent="."]
 
 [node name="rak1" type="StaticBody2D" parent="furniture"]
+z_index = 2
+y_sort_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture/rak1"]
 position = Vector2(746, 26.25)
 shape = SubResource("RectangleShape2D_g8oxt")
 
 [node name="RakKosong1" type="Sprite2D" parent="furniture/rak1"]
-z_index = 1
 position = Vector2(746.00006, 29.999996)
 scale = Vector2(0.9049296, 0.9049296)
 texture = ExtResource("4_elsha")
 
 [node name="rak2" type="StaticBody2D" parent="furniture"]
+z_index = 2
+y_sort_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture/rak2"]
-position = Vector2(673, 91.0625)
+position = Vector2(673, 91.5)
 shape = SubResource("RectangleShape2D_6ien3")
 
 [node name="RakKosong2" type="Sprite2D" parent="furniture/rak2"]
 z_index = 2
-y_sort_enabled = true
 position = Vector2(744, 80.00001)
 scale = Vector2(0.92210144, 0.92210144)
 texture = ExtResource("4_7ofxu")
 
 [node name="rak3" type="StaticBody2D" parent="furniture"]
+z_index = 2
+y_sort_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture/rak3"]
 y_sort_enabled = true
@@ -539,20 +544,22 @@ scale = Vector2(0.9172534, 0.91725343)
 texture = ExtResource("4_elsha")
 
 [node name="rak4" type="StaticBody2D" parent="furniture"]
+z_index = 2
+y_sort_enabled = true
 
 [node name="RakKosong3" type="Sprite2D" parent="furniture/rak4"]
 z_index = 2
-y_sort_enabled = true
 position = Vector2(672, 80)
 scale = Vector2(0.9166666, 0.91666675)
 texture = ExtResource("4_7ofxu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture/rak4"]
-position = Vector2(743.5, 91)
+position = Vector2(743.5, 91.5)
 shape = SubResource("RectangleShape2D_elsha")
 
 [node name="kardus" type="StaticBody2D" parent="furniture"]
 z_index = 2
+y_sort_enabled = true
 
 [node name="Furniture11Toko" type="Sprite2D" parent="furniture/kardus"]
 z_index = 3
@@ -573,6 +580,8 @@ scale = Vector2(0.41666684, 0.41666687)
 texture = ExtResource("5_elsha")
 
 [node name="rakMiring" type="StaticBody2D" parent="furniture"]
+z_index = 2
+y_sort_enabled = true
 
 [node name="RakMiringFixed" type="Sprite2D" parent="furniture/rakMiring"]
 z_index = 2
@@ -601,24 +610,33 @@ z_index = 3
 tile_map_data = PackedByteArray("AAAhAAwAAAAJAAgAAAAiAAwAAAAJAAgAAAAkAAwAAAAJAAgAAAAlAAwAAAAJAAgAAAAmAAkAAAAJAAgAAAAnAAkAAAAJAAgAAAApAAkAAAAJAAgAAAAoAAkAAAAJAAgAAAAqAAkAAAAJAAgAAAArAAkAAAAJAAgAAAAsAAkAAAAJAAgAAAAtAAkAAAAJAAgAAAAuAAkAAAAJAAgAAAAvAAkAAAAJAAgAAAAwAAkAAAAJAAgAAAAxAAgAAAARAAcAAAAxAAkAAAARAAgAAAAxAP//AAARAAcAAAAxAAAAAAARAAcAAAAxAAEAAAARAAcAAAAxAAIAAAARAAcAAAAxAAMAAAARAAcAAAAxAAQAAAARAAcAAAAxAAUAAAARAAcAAAAxAAYAAAARAAcAAAAxAAcAAAARAAcAAAAhAP7/AAAOAAAAAAAiAP7/AAAPAAAAAAAjAP7/AAAOAAAAAAAkAP7/AAAPAAAAAAAlAP7/AAAOAAAAAAAmAP7/AAAPAAAAAAAnAP7/AAAOAAAAAAAoAP7/AAAPAAAAAAApAP7/AAAOAAAAAAAqAP7/AAAPAAAAAAArAP7/AAAOAAAAAAAsAP7/AAAPAAAAAAAtAP7/AAAOAAAAAAAuAP7/AAAPAAAAAAAvAP7/AAAOAAAAAAAwAP7/AAAPAAAAAAAgAP//AAAAAAEAAAAgAAAAAAAAAAEAAAAgAAEAAAAAAAEAAAAgAAIAAAAAAAEAAAAgAAMAAAAAAAEAAAAgAAQAAAAAAAEAAAAgAAUAAAAAAAEAAAAgAAYAAAAAAAEAAAAgAAcAAAAAAAEAAAAgAAgAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_4b01b")
 
-[node name="path_NPC" type="Path2D" parent="."]
+[node name="stopPoint" type="Area2D" parent="."]
+position = Vector2(8, 219)
+script = ExtResource("10_7fk30")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stopPoint"]
+position = Vector2(596, 130)
+shape = SubResource("CircleShape2D_5n7yi")
+
+[node name="npc_controller" type="Node2D" parent="." node_paths=PackedStringArray("npc", "path", "path_follow")]
+script = ExtResource("9_5n7yi")
+npc = NodePath("Laras")
+path = NodePath("path_NPC")
+path_follow = NodePath("path_NPC/PathFollow2D")
+
+[node name="path_NPC" type="Path2D" parent="npc_controller"]
 z_index = 3
+position = Vector2(3, -2)
 curve = SubResource("Curve2D_d72r0")
 script = ExtResource("8_4b01b")
-npc_scene = ExtResource("9_q41pj")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="path_NPC"]
+[node name="PathFollow2D" type="PathFollow2D" parent="npc_controller/path_NPC"]
 position = Vector2(566, 207)
 rotation = -1.6030432
 
-[node name="Timer" type="Timer" parent="path_NPC"]
+[node name="Timer" type="Timer" parent="npc_controller/path_NPC"]
 
-[node name="Laras" parent="path_NPC" instance=ExtResource("9_q41pj")]
-z_index = 5
-
-[node name="stopPoint" type="Area2D" parent="path_NPC"]
-script = ExtResource("10_7fk30")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="path_NPC/stopPoint"]
-position = Vector2(596, 130)
-shape = SubResource("CircleShape2D_5n7yi")
+[node name="Laras" parent="npc_controller" instance=ExtResource("9_q41pj")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(61, 226)

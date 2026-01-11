@@ -82,7 +82,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_q53he")
 }],
 "loop": true,
-"name": &"idle_down",
+"name": &"idleDown",
 "speed": 5.0
 }, {
 "frames": [{
@@ -90,7 +90,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_llb1r")
 }],
 "loop": true,
-"name": &"idle_left",
+"name": &"idleLeft",
 "speed": 5.0
 }, {
 "frames": [{
@@ -98,7 +98,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_7h5x5")
 }],
 "loop": true,
-"name": &"idle_right",
+"name": &"idleRight",
 "speed": 5.0
 }, {
 "frames": [{
@@ -106,7 +106,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_nnkmd")
 }],
 "loop": true,
-"name": &"idle_up",
+"name": &"idleUp",
 "speed": 5.0
 }, {
 "frames": [{
@@ -123,8 +123,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_lu65j")
 }],
 "loop": true,
-"name": &"laras_down",
-"speed": 5.0
+"name": &"walkDown",
+"speed": 4.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -140,7 +140,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_byk8s")
 }],
 "loop": true,
-"name": &"laras_left",
+"name": &"walkLeft",
 "speed": 5.0
 }, {
 "frames": [{
@@ -157,7 +157,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_mujcy")
 }],
 "loop": true,
-"name": &"laras_right",
+"name": &"walkRight",
 "speed": 5.0
 }, {
 "frames": [{
@@ -174,7 +174,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ccwfh")
 }],
 "loop": true,
-"name": &"laras_up",
+"name": &"walkUp",
 "speed": 5.0
 }]
 
@@ -186,9 +186,8 @@ scale = Vector2(0.05, 0.05)
 shape = SubResource("CapsuleShape2D_wb1rg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(2, -5.0000005)
-scale = Vector2(0.287, 0.2900337)
+scale = Vector2(0.3, 0.303)
 sprite_frames = SubResource("SpriteFrames_hluun")
-animation = &"idle_up"
+animation = &"idleRight"
 
 [node name="Node2D" type="Node2D" parent="."]

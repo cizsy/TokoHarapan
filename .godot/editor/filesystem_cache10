@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768056544
+::res://::1768126124
 door.gd::GDScript::3940797545735580352::1767456243::0::1::::<>Area2D<><>0<>0<><>::
 door.tscn::PackedScene::5073191202678767892::1767456243::0::1::::<><><>0<>0<><>::uid://bwe7mh7neyat1::::res://door.gd
 icon.svg::CompressedTexture2D::2447938499152222639::1765947594::1765947604::1::::<><><>0<>0<>2fa08911b93570aacdb265f9ab654fe6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-laras.gd::GDScript::4262554182305204023::1768040144::0::1::::<>CharacterBody2D<><>0<>0<><>::
+laras.gd::GDScript::4262554182305204023::1768063278::0::1::::<>CharacterBody2D<><>0<>0<><>::
 main.tscn::PackedScene::7779519104086735489::1767854275::0::1::::<><><>0<>0<><>::uid://c4bi3hejd50rs::::res://player.gd<>uid://b2n0ni3ctyr3g::::res://Asset/character/raka/xzca.png<>uid://gl6ixfcbl5hf::::res://Asset/character/raka/raka_left1.png<>uid://uj064t71aqeq::::res://Asset/character/raka/raka_right.png<>uid://bf3s0fbe0rbob::::res://Asset/character/raka/raka_up.png<>uid://87w30i7hasl5::::res://Asset/character/raka/xzca2.png<>uid://dqf0i1ib58aa::::res://Asset/character/raka/raka_left2.png
 NPC_bgWIndah.tscn::PackedScene::8782051268678096412::1766753177::0::1::::<><><>0<>0<><>::
 NPC_bocahSD.tscn::PackedScene::609344024091288937::1766753144::0::1::::<><><>0<>0<><>::
@@ -14,19 +14,20 @@ NPC_Laras.tscn::PackedScene::914502272655944434::1767981469::0::1::::<><><>0<>0<
 NPC_PakBeni.tscn::PackedScene::9989546640437346::1766753058::0::1::::<><><>0<>0<><>::
 path_2d.gd::GDScript::680374635570334986::1767754906::0::1::::<>Path2D<><>0<>0<><>::
 path_follow_2d.gd::GDScript::659448160463846990::1767840282::0::1::::<>PathFollow2D<><>0<>0<><>::
-path_npc.gd::GDScript::9019451602368823106::1768039917::0::1::::<>Path2D<><>0<>0<><>::
+path_npc.gd::GDScript::9019451602368823106::1768058961::0::1::::<>Path2D<><>0<>0<><>::
 player.gd::GDScript::6810918323071474936::1767418760::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile::-1::1767802044::0::1::::<><><>0<>0<><>::
 rumah.tscn::PackedScene::4512196703873112633::1767744878::0::1::::<><><>0<>0<><>::uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://dwtrcdq8mvtpy::::res://Asset/rumah/TopDownHouse_FurnitureState1.png<>uid://di3psp00bdknx::::res://main.tscn<>uid://bcpbxypdpe3mc::::res://Asset/rumah/TopDownHouse_SmallItems.png<>uid://cejqyn5tdygue::::res://door.tscn
+stop_point.gd::GDScript::6118131506103056010::1768058132::0::1::::<>Area2D<><>0<>0<><>::
 testPath.tscn::PackedScene::9015020369499750736::1767945419::0::1::::<><><>0<>0<><>::uid://d1rdbx7ob6krq::::res://path_npc.gd<>uid://na8yo7rkcvy5::::res://NPC_Laras.tscn
-toko.tscn::PackedScene::5316967764681307820::1768041693::0::1::::<><><>0<>0<><>::uid://di3psp00bdknx::::res://main.tscn<>uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://d2ivuf42gpfjd::::res://Asset/toko/rak kosong2.png<>uid://bo14ryng52axe::::res://Asset/toko/rak kosong1.png<>uid://dloxddrvk0pq4::::res://Asset/toko/furniture11_toko.png<>uid://cwj6twpwk3al2::::res://Asset/toko/rak miring fixed .png<>uid://btheh8qoysdjg::::res://Asset/toko/rak miring fixed crop.png<>uid://d1rdbx7ob6krq::::res://path_npc.gd<>uid://na8yo7rkcvy5::::res://NPC_Laras.tscn
+toko.tscn::PackedScene::5316967764681307820::1768058131::0::1::::<><><>0<>0<><>::uid://di3psp00bdknx::::res://main.tscn<>uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://d2ivuf42gpfjd::::res://Asset/toko/rak kosong2.png<>uid://bo14ryng52axe::::res://Asset/toko/rak kosong1.png<>uid://dloxddrvk0pq4::::res://Asset/toko/furniture11_toko.png<>uid://cwj6twpwk3al2::::res://Asset/toko/rak miring fixed .png<>uid://btheh8qoysdjg::::res://Asset/toko/rak miring fixed crop.png<>uid://d1rdbx7ob6krq::::res://path_npc.gd<>uid://na8yo7rkcvy5::::res://NPC_Laras.tscn<>uid://ctfwy5h6fbe5g::::res://stop_point.gd
 ::res://addons/::1767833987
 ::res://addons/godot-git-plugin/::1767830278
 git_plugin.gdextension::GDExtension::8423032084235559825::1767830266::0::1::::<><><>0<>0<><>::
 THIRDPARTY.md::TextFile::-1::1767830266::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-git-plugin/linux/::1767830278
 ::res://addons/godot-git-plugin/macos/::1767830278
-::res://addons/godot-git-plugin/windows/::1768056538
+::res://addons/godot-git-plugin/windows/::1768126117
 ::res://addons/rubonnek.dialogue_engine/::1767834007
 LICENSE.md::TextFile::-1::1767833987::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1767833987::0::1::::<><><>0<>0<><>::
@@ -186,7 +187,7 @@ rak miring fixed .png::CompressedTexture2D::6337492663769218961::1767572852::176
 rak miring fixed crop.png::CompressedTexture2D::3734716484278839572::1767597470::1767597474::1::::<><><>0<>0<>38b283180d559041565ee5c56f68a2b0<>res://.godot/imported/rak miring fixed crop.png-24b09bb7111814faddd433535dc48db7.ctex::
 ::res://demos/::1767834007
 ::res://demos/0. introduction/::1767834007
-introduction.tscn::PackedScene::7443443769189839568::1767833987::0::1::::<><><>0<>0<><>::
+introduction.tscn::PackedScene::7443443769189839568::1768063327::0::1::::<><><>0<>0<><>::
 ::res://demos/1. simple dialogue/::1767834007
 simple_dialogue.gd::GDScript::607685419686964652::1767833987::0::1::::<>DialogueEngine<><>0<>0<><>::
 simple_log.gd::GDScript::5485481880464819647::1767833987::0::1::::<>VBoxContainer<><>0<>0<><>::

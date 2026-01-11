@@ -1,19 +1,47 @@
 extends CharacterBody2D
 
 @onready var sprite = $AnimatedSprite2D
-var facing_direction := Vector2.DOWN
+var last_dir := Vector2.DOWN
 
-func atur_visual(dir: Vector2):
-	if abs(dir.x) > abs(dir.y):
-		facing_direction = Vector2(sign(dir.x), 0)
-	else:
-		facing_direction = Vector2(0, sign(dir.y))
+func _ready():
+	# Nonaktifkan physics process karena NPC digerakkan oleh controller
+	set_physics_process(false)
 
-	if facing_direction.x > 0:
-		sprite.play("laras_right")
-	elif facing_direction.x < 0:
-		sprite.play("laras_left")
-	elif facing_direction.y > 0:
-		sprite.play("laras_down")
+func play_walk_animation(dir: Vector2):
+	if dir.length() > 0:
+		last_dir = dir.normalized()
+	
+	var anim := ""
+	if abs(last_dir.x) > abs(last_dir.y):
+		if last_dir.x > 0:
+			anim = "walkRight"
+		else:
+			anim = "walkLeft"
 	else:
-		sprite.play("laras_up")
+		if last_dir.y > 0:
+			anim = "walkDown"
+		else:
+			anim = "walkUp"
+	
+	if sprite.animation != anim:
+		sprite.play(anim)
+
+func play_idle_animation():
+	var anim := ""
+	if abs(last_dir.x) > abs(last_dir.y):
+		if last_dir.x > 0:
+			anim = "idleRight"
+		else:
+			anim = "idleLeft"
+	else:
+		if last_dir.y > 0:
+			anim = "idleDown"
+		else:
+			anim = "idleUp"
+	
+	if sprite.animation != anim:
+		sprite.play(anim)
+
+func set_facing_direction(dir: Vector2):
+	last_dir = dir.normalized()
+	play_idle_animation()

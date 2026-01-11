@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dqf0i1ib58aa" path="res://Asset/character/raka/raka_left2.png" id="7_dg77c"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_272bh"]
-radius = 28.125
-height = 81.25
+radius = 15.625
+height = 68.75
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycdy4"]
 atlas = ExtResource("2_272bh")
@@ -180,12 +180,12 @@ script = ExtResource("1_ig7tw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1
-position = Vector2(34, -3)
+position = Vector2(34, -1)
 scale = Vector2(0.32, 0.32)
 shape = SubResource("CapsuleShape2D_272bh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(33, -4)
+position = Vector2(33, -2)
 scale = Vector2(0.06909123, 0.078559354)
 sprite_frames = SubResource("SpriteFrames_lswn8")
 animation = &"idleDown"
