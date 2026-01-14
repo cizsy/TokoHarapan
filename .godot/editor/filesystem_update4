@@ -1,8 +1,7 @@
-res://path_npc.gd
-res://laras.gd
-res://NPC_Laras.tscn
+res://door.tscn
 res://rumah.tscn
 res://toko.tscn
-res://main.tscn
-res://path_follow_2d.gd
-res://npc_controller.gd
+res://property/door.gd
+res://NPC_IbuPink.tscn
+res://testPath.tscn
+res://npc/NPC_Laras.tscn

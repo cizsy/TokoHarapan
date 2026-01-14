@@ -13,7 +13,11 @@ config_version=5
 config/name="Toko Harapan"
 run/main_scene="uid://di3psp00bdknx"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Asset/icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rubonnek.dialogue_engine/plugin.cfg")
 
 [input]
 

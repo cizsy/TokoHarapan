@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dwtrcdq8mvtpy" path="res://Asset/rumah/TopDownHouse_FurnitureState1.png" id="1_xmujd"]
 [ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://main.tscn" id="2_8j02g"]
 [ext_resource type="Texture2D" uid="uid://bcpbxypdpe3mc" path="res://Asset/rumah/TopDownHouse_SmallItems.png" id="2_l4n1j"]
-[ext_resource type="PackedScene" uid="uid://cejqyn5tdygue" path="res://door.tscn" id="6_l4n1j"]
+[ext_resource type="PackedScene" uid="uid://cejqyn5tdygue" path="res://property/door.tscn" id="6_l4n1j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gi4hj"]
 texture = ExtResource("1_xmujd")

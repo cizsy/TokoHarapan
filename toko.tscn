@@ -7,9 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dloxddrvk0pq4" path="res://Asset/toko/furniture11_toko.png" id="5_elsha"]
 [ext_resource type="Texture2D" uid="uid://cwj6twpwk3al2" path="res://Asset/toko/rak miring fixed .png" id="6_d72r0"]
 [ext_resource type="Texture2D" uid="uid://btheh8qoysdjg" path="res://Asset/toko/rak miring fixed crop.png" id="7_d72r0"]
-[ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://path_npc.gd" id="8_4b01b"]
-[ext_resource type="Script" uid="uid://coc713dca6smr" path="res://npc_controller.gd" id="9_5n7yi"]
-[ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://NPC_Laras.tscn" id="9_q41pj"]
+[ext_resource type="Script" uid="uid://d1rdbx7ob6krq" path="res://npc/path_npc.gd" id="8_4b01b"]
+[ext_resource type="Script" uid="uid://coc713dca6smr" path="res://npc/npc_controller.gd" id="9_5n7yi"]
+[ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://npc/NPC_Laras.tscn" id="9_q41pj"]
 [ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://stop_point.gd" id="10_7fk30"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8oxt"]
