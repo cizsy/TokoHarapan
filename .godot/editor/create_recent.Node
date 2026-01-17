@@ -1,4 +1,5 @@
 CollisionShape2D
+StaticBody2D
 Area2D
 Node2D
 CharacterBody2D
@@ -11,4 +12,3 @@ Path2D
 Camera2D
 TileMapLayer
 AnimatedSprite2D
-NavigationRegion2D

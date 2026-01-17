@@ -680,7 +680,7 @@ tile_set = SubResource("TileSet_xmujd")
 
 [node name="Player" parent="." instance=ExtResource("2_8j02g")]
 z_index = 2
-position = Vector2(368, 78)
+position = Vector2(333, 110)
 
 [node name="door" parent="." instance=ExtResource("6_l4n1j")]
 z_index = 1

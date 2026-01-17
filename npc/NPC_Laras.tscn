@@ -192,7 +192,7 @@ shape = SubResource("CapsuleShape2D_wb1rg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.303)
 sprite_frames = SubResource("SpriteFrames_hluun")
-animation = &"idleRight"
+animation = &"idleDown"
 
 [node name="interactionArea" type="Area2D" parent="."]
 script = ExtResource("3_6wlgv")

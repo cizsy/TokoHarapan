@@ -176,7 +176,7 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_ig7tw")
 metadata/_edit_horizontal_guides_ = [-35.0]
 
@@ -187,17 +187,15 @@ scale = Vector2(0.32, 0.32)
 shape = SubResource("CapsuleShape2D_272bh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(33, -2)
+position = Vector2(36, -3)
 scale = Vector2(0.06909123, 0.078559354)
 sprite_frames = SubResource("SpriteFrames_lswn8")
-animation = &"idleDown"
+animation = &"idleUp"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
-[node name="Node2D" type="Node2D" parent="."]
-
 [node name="InteractIcon" type="Sprite2D" parent="."]
-position = Vector2(34, -29)
+position = Vector2(34, -31)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("8_5vw27")

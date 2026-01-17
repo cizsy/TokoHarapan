@@ -61,14 +61,29 @@ func play_idle_animation():
 
 	if $AnimatedSprite2D.animation != anim:
 		$AnimatedSprite2D.play(anim)
+		
 var current_interactable = null
 
 func _process(_delta):
-	if current_interactable != null:
-		$InteractIcon.visible = true
-	else:
-		$InteractIcon.visible = false
-
+	# Kita cuma butuh cek tombol tekan di sini
 	if Input.is_action_just_pressed("interact"):
+		# Kalau player_near atau current_interactable ada, eksekusi
 		if current_interactable:
-			current_interactable.interact()
+			if current_interactable.has_method("interact"):
+				current_interactable.interact()
+			# Khusus untuk pintu yang pakai fungsi open_door
+			elif current_interactable.has_method("open_door"):
+				current_interactable.open_door()
+
+# Fungsi untuk munculin icon (Dipanggil dari script pintu/objek)
+func show_icon(lihat: bool):
+	$InteractIcon.visible = lihat
+
+# Sinyal Area (Opsional: Tetap pakai ini kalau mau simpan referensi objek)
+func _on_interaction_area_area_entered(area: Area2D) -> void:
+	if area.is_in_group("interactable"):
+		current_interactable = area
+
+func _on_interaction_area_area_exited(area: Area2D) -> void:
+	if current_interactable == area:
+		current_interactable = null

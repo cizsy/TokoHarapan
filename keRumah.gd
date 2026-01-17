@@ -7,20 +7,19 @@ func _ready():
 	body_exited.connect(_on_body_exited)
 
 func _on_body_entered(body):
-	if body.name == "Player":
+	if body.is_in_group("player"):
 		player_near = true
-		print("Player masuk area")
+		# Panggil fungsi di player untuk munculkan icon
+		if body.has_method("show_icon"):
+			body.show_icon(true)
 
 func _on_body_exited(body):
-	if body.name == "Player":
+	if body.is_in_group("player"):
 		player_near = false
-		print("Player keluar area")
+		# Panggil fungsi di player untuk sembunyikan icon
+		if body.has_method("show_icon"):
+			body.show_icon(false)
 
-func _process(delta):
+func _process(_delta):
 	if player_near and Input.is_action_just_pressed("interact"):
-		print("Interact ditekan")
-		open_door()
-
-func open_door():
-	print("PINDAH SCENE")
-	get_tree().change_scene_to_file("res://rumah.tscn")
+		get_tree().change_scene_to_file("res://rumah.tscn")
