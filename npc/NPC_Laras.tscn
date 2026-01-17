@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://na8yo7rkcvy5"]
+[gd_scene load_steps=24 format=3 uid="uid://na8yo7rkcvy5"]
 
 [ext_resource type="Script" uid="uid://b1y2v6f8bn6kp" path="res://npc/laras.gd" id="1_7vac5"]
 [ext_resource type="Texture2D" uid="uid://bb313rprv1r4v" path="res://Asset/character/laras/laras.png" id="2_pbsug"]
+[ext_resource type="Script" uid="uid://baet4m58t87y2" path="res://npc/interactLaras.gd" id="3_6wlgv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wb1rg"]
 radius = 6.0
@@ -178,6 +179,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6wlgv"]
+radius = 18.439089
+
 [node name="Laras" type="CharacterBody2D"]
 script = ExtResource("1_7vac5")
 
@@ -190,4 +194,13 @@ scale = Vector2(0.3, 0.303)
 sprite_frames = SubResource("SpriteFrames_hluun")
 animation = &"idleRight"
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="interactionArea" type="Area2D" parent="."]
+script = ExtResource("3_6wlgv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactionArea"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_6wlgv")
+disabled = true
+
+[connection signal="body_entered" from="interactionArea" to="interactionArea" method="_on_body_entered"]
+[connection signal="body_exited" from="interactionArea" to="interactionArea" method="_on_body_exited"]

@@ -61,3 +61,14 @@ func play_idle_animation():
 
 	if $AnimatedSprite2D.animation != anim:
 		$AnimatedSprite2D.play(anim)
+var current_interactable = null
+
+func _process(_delta):
+	if current_interactable != null:
+		$InteractIcon.visible = true
+	else:
+		$InteractIcon.visible = false
+
+	if Input.is_action_just_pressed("interact"):
+		if current_interactable:
+			current_interactable.interact()

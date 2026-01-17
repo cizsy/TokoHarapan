@@ -45,3 +45,7 @@ func play_idle_animation():
 func set_facing_direction(dir: Vector2):
 	last_dir = dir.normalized()
 	play_idle_animation()
+
+func interact ():
+	print("NPC berinteraksi")
+	

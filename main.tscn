@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://di3psp00bdknx"]
+[gd_scene load_steps=26 format=3 uid="uid://di3psp00bdknx"]
 
 [ext_resource type="Script" uid="uid://c4bi3hejd50rs" path="res://player.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://b2n0ni3ctyr3g" path="res://Asset/character/raka/xzca.png" id="2_272bh"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bf3s0fbe0rbob" path="res://Asset/character/raka/raka_up.png" id="5_4c57u"]
 [ext_resource type="Texture2D" uid="uid://87w30i7hasl5" path="res://Asset/character/raka/xzca2.png" id="6_efxa6"]
 [ext_resource type="Texture2D" uid="uid://dqf0i1ib58aa" path="res://Asset/character/raka/raka_left2.png" id="7_dg77c"]
+[ext_resource type="Texture2D" uid="uid://c3fhs60lmy2aa" path="res://Asset/UI real/interact.png" id="8_5vw27"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_272bh"]
 radius = 15.625
@@ -177,6 +178,7 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ig7tw")
+metadata/_edit_horizontal_guides_ = [-35.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1
@@ -194,3 +196,8 @@ animation = &"idleDown"
 zoom = Vector2(2, 2)
 
 [node name="Node2D" type="Node2D" parent="."]
+
+[node name="InteractIcon" type="Sprite2D" parent="."]
+position = Vector2(34, -29)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_5vw27")

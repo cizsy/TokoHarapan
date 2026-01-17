@@ -1,12 +1,14 @@
 f098f8d3115d962055284dee314b4f89
-::res://::1768569726
+::res://::1768638078
 main.tscn::PackedScene::7779519104086735489::1768136609::0::1::::<><><>0<>0<><>::uid://c4bi3hejd50rs::::res://player.gd<>uid://b2n0ni3ctyr3g::::res://Asset/character/raka/xzca.png<>uid://gl6ixfcbl5hf::::res://Asset/character/raka/raka_left1.png<>uid://uj064t71aqeq::::res://Asset/character/raka/raka_right.png<>uid://bf3s0fbe0rbob::::res://Asset/character/raka/raka_up.png<>uid://87w30i7hasl5::::res://Asset/character/raka/xzca2.png<>uid://dqf0i1ib58aa::::res://Asset/character/raka/raka_left2.png
 player.gd::GDScript::6810918323071474936::1767418760::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile::-1::1767802044::0::1::::<><><>0<>0<><>::
-rumah.tscn::PackedScene::4512196703873112633::1768383828::0::1::::<><><>0<>0<><>::uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://dwtrcdq8mvtpy::::res://Asset/rumah/TopDownHouse_FurnitureState1.png<>uid://di3psp00bdknx::::res://main.tscn<>uid://bcpbxypdpe3mc::::res://Asset/rumah/TopDownHouse_SmallItems.png<>uid://cejqyn5tdygue::::res://property/door.tscn
+keRumah.gd::GDScript::8610451490831992809::1768637795::0::1::::<>Area2D<><>0<>0<><>::
+scene_1.tscn::PackedScene::545838616302357338::1768573482::0::1::::<><><>0<>0<><>::uid://ch0txgx1ckrlc::::res://toko.tscn
+rumah.tscn::PackedScene::4512196703873112633::1768637795::0::1::::<><><>0<>0<><>::uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://dwtrcdq8mvtpy::::res://Asset/rumah/TopDownHouse_FurnitureState1.png<>uid://di3psp00bdknx::::res://main.tscn<>uid://bcpbxypdpe3mc::::res://Asset/rumah/TopDownHouse_SmallItems.png<>uid://cejqyn5tdygue::::res://property/door.tscn
 stop_point.gd::GDScript::6118131506103056010::1768058132::0::1::::<>Area2D<><>0<>0<><>::
 testPath.tscn::PackedScene::9015020369499750736::1768383936::0::1::::<><><>0<>0<><>::uid://d1rdbx7ob6krq::::res://npc/path_npc.gd<>uid://na8yo7rkcvy5::::res://npc/NPC_Laras.tscn
-toko.tscn::PackedScene::5316967764681307820::1768383936::0::1::::<><><>0<>0<><>::uid://di3psp00bdknx::::res://main.tscn<>uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://d2ivuf42gpfjd::::res://Asset/toko/rak kosong2.png<>uid://bo14ryng52axe::::res://Asset/toko/rak kosong1.png<>uid://dloxddrvk0pq4::::res://Asset/toko/furniture11_toko.png<>uid://cwj6twpwk3al2::::res://Asset/toko/rak miring fixed .png<>uid://btheh8qoysdjg::::res://Asset/toko/rak miring fixed crop.png<>uid://d1rdbx7ob6krq::::res://npc/path_npc.gd<>uid://coc713dca6smr::::res://npc/npc_controller.gd<>uid://na8yo7rkcvy5::::res://npc/NPC_Laras.tscn<>uid://ctfwy5h6fbe5g::::res://stop_point.gd
+toko.tscn::PackedScene::5316967764681307820::1768638078::0::1::::<><><>0<>0<><>::uid://di3psp00bdknx::::res://main.tscn<>uid://cfufe5jufyj6s::::res://Asset/rumah/TopDownHouse_FloorsAndWalls.png<>uid://d2ivuf42gpfjd::::res://Asset/toko/rak kosong2.png<>uid://bo14ryng52axe::::res://Asset/toko/rak kosong1.png<>uid://dloxddrvk0pq4::::res://Asset/toko/furniture11_toko.png<>uid://cwj6twpwk3al2::::res://Asset/toko/rak miring fixed .png<>uid://btheh8qoysdjg::::res://Asset/toko/rak miring fixed crop.png<>uid://d1rdbx7ob6krq::::res://npc/path_npc.gd<>uid://coc713dca6smr::::res://npc/npc_controller.gd<>uid://na8yo7rkcvy5::::res://npc/NPC_Laras.tscn<>uid://ctfwy5h6fbe5g::::res://stop_point.gd<>uid://duw744a6s631n::::res://keRumah.gd
 ::res://addons/::1768445385
 ::res://addons/dialogue_manager/::1768445399
 constants.gd::GDScript::4240262336831424009::1768445386::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
@@ -104,7 +106,7 @@ tree_panel_style_box_flat.tres::StyleBoxFlat::4586976431972105193::1767833987::0
 ::res://addons/rubonnek.dialogue_engine/runtime/::1767834007
 dialogue_engine.gd::GDScript::8843080995596322286::1767833987::0::1::::DialogueEngine<>RefCounted<><>0<>0<><>::
 dialogue_entry.gd::GDScript::319091356235894513::1767833987::0::1::::DialogueEntry<>RefCounted<><>0<>0<><>::
-::res://Asset/::1768571752
+::res://Asset/::1768639445
 icon.svg::CompressedTexture2D::2447938499152222639::1765947594::1768384264::1::::<><><>0<>0<>924b4415d45803af4a31ed2916a40122<>res://.godot/imported/icon.svg-0a5d4dc0e3a3bb97758b18a2fe883bc4.ctex::
 ::res://Asset/barang jualan/::1767522657
 minyakgoreng.png::CompressedTexture2D::570999990316519123::1767328341::1767329376::1::::<><><>0<>0<>d5734e06f46afefa765964991143994e<>res://.godot/imported/minyakgoreng.png-cb330eeeb3c31f0a3b4a189c143231eb.ctex::
@@ -124,10 +126,9 @@ raka_right.png::CompressedTexture2D::1423931110994534072::1767714558::1767714907
 raka_up.png::CompressedTexture2D::2796305294091730489::1767714523::1767714907::1::::<><><>0<>0<>2067529ccb7b3311c965457526711be6<>res://.godot/imported/raka_up.png-8447aaa16f9ff0cb9bb1c019c7c79292.ctex::
 xzca2.png::CompressedTexture2D::2383679031160678860::1767714780::1767714908::1::::<><><>0<>0<>8d36ff552d87ea222f095b09dfda3596<>res://.godot/imported/xzca2.png-28f4ba0f6797b4e40743149e220724d3.ctex::
 xzca.png::CompressedTexture2D::4309897976421227698::1767714728::1767714908::1::::<><><>0<>0<>59633f83f7e5e0bc1ad75da791bd77ca<>res://.godot/imported/xzca.png-af83f273e7b2c3ca2adcb220f34918a3.ctex::
-::res://Asset/font/::1768571429
+::res://Asset/font/::1768571859
 RemondroundedpixelRegularDemo-worww.otf::FontFile::2899377720784921520::1768571390::1768571859::1::::<><><>0<>0<>8bf1793f64345572938b6a94f2f84b0d<>res://.godot/imported/RemondroundedpixelRegularDemo-worww.otf-e4eaa728b5b30f6a4dc6bec45cb0af85.fontdata::
 ::res://Asset/music/::1768383751
-::res://Asset/New folder/::1768571614
 ::res://Asset/rumah/::1767522657
 pintuBuka.png::CompressedTexture2D::8800998302812557482::1766147049::1766147056::1::::<><><>0<>0<>4f75cb12b0c8f7a7d72bcf8e52625ee6<>res://.godot/imported/pintuBuka.png-b4cbe72bc788c6cdacc152bbf747bcd3.ctex::
 pintu_nutup.png::CompressedTexture2D::789551833106027579::1766147000::1766147056::1::::<><><>0<>0<>44a68777bdaa007b380e3895e8eb525d<>res://.godot/imported/pintu_nutup.png-495bad618e0d3127daeb493a74b085aa.ctex::
@@ -253,7 +254,7 @@ rak kosong1.png::CompressedTexture2D::3424530748474344778::1767572313::176757588
 rak kosong2.png::CompressedTexture2D::9072186932716298305::1767572364::1767575883::1::::<><><>0<>0<>b7937fecc4edeb74234fabadec47e0a4<>res://.godot/imported/rak kosong2.png-bdac3a3e7dc22c5f573ef2c87a0a2112.ctex::
 rak miring fixed .png::CompressedTexture2D::6337492663769218961::1767572852::1767575883::1::::<><><>0<>0<>cc47c986ce1cffc37b97902a75fd1843<>res://.godot/imported/rak miring fixed .png-3a48b4a796674f661dee55d8c0f252c1.ctex::
 rak miring fixed crop.png::CompressedTexture2D::3734716484278839572::1767597470::1767597474::1::::<><><>0<>0<>38b283180d559041565ee5c56f68a2b0<>res://.godot/imported/rak miring fixed crop.png-24b09bb7111814faddd433535dc48db7.ctex::
-::res://Asset/UI/::1768571770
+::res://Asset/UI/::1768571865
 UI_Flat_Banner01a.png::CompressedTexture2D::925659223249482937::1723803548::1768571864::1::::<><><>0<>0<>b40c224a406f157fa9534b800919e88f<>res://.godot/imported/UI_Flat_Banner01a.png-041b4d2516f6607a036dd9caae877f61.ctex::
 UI_Flat_Banner02a.png::CompressedTexture2D::5319889099403382437::1723803564::1768571864::1::::<><><>0<>0<>e03ae440f12a40f3414faf5585396c4e<>res://.godot/imported/UI_Flat_Banner02a.png-e0b15ad7f933451534407fd4309b153e.ctex::
 UI_Flat_Banner03a.png::CompressedTexture2D::5329023204421863517::1723803576::1768571864::1::::<><><>0<>0<>7358ce2c35f6f36247d66ee04a8913a7<>res://.godot/imported/UI_Flat_Banner03a.png-48549c79336a1f502dbc4777e696babd.ctex::
@@ -352,6 +353,8 @@ UI_Flat_ToggleOn02a.png::CompressedTexture2D::7247193202076900208::1723805016::1
 UI_Flat_ToggleOn03a.png::CompressedTexture2D::7825255483285584279::1723805073::1768571861::1::::<><><>0<>0<>775403680e60437d5ccbdc8b5c3efb7a<>res://.godot/imported/UI_Flat_ToggleOn03a.png-bb5ec055c4c6f9a6a9b0701d4090d07f.ctex::
 UI_Flat_ToggleRightOff01a.png::CompressedTexture2D::1818946433785592085::1723804955::1768571861::1::::<><><>0<>0<>33b317bdce4ad784fdf5ed732b3ab0cb<>res://.godot/imported/UI_Flat_ToggleRightOff01a.png-622bfdd7b5180c6522fb7da979554557.ctex::
 UI_Flat_ToggleRightOn01a.png::CompressedTexture2D::908847583733928916::1723804942::1768571861::1::::<><><>0<>0<>acc17e9d6f93bd9862f69e581f84ec73<>res://.godot/imported/UI_Flat_ToggleRightOn01a.png-7a4174e641709f6928baa7c641b37c4a.ctex::
+::res://Asset/UI real/::1768639509
+interact.png::CompressedTexture2D::6748909708621826188::1768639509::1768639513::1::::<><><>0<>0<>0f161c2937ffac0f22970515ac8db39f<>res://.godot/imported/interact.png-6b12111dcd92d16cdba2a88721f044b9.ctex::
 ::res://demos/::1767834007
 ::res://demos/0. introduction/::1767834007
 introduction.tscn::PackedScene::7443443769189839568::1768063327::0::1::::<><><>0<>0<><>::
@@ -403,7 +406,7 @@ timed_options_dialogue.gd::GDScript::3284114718797178939::1767833988::0::1::::<>
 dialogBox.png::CompressedTexture2D::3983663203033904166::1768568279::1768568312::1::::<><><>0<>0<>e8643ed6c9a7b8e235c02d906422a011<>res://.godot/imported/dialogBox.png-cc1598f3c8426158ebf732215224424c.ctex::
 untitled.dialogue::Resource::3108787682276075652::1768568322::1768568323::1::::<><><>0<>0<>dbe79168119cd507173d67b8e8e3d771<>res://.godot/imported/untitled.dialogue-93fa3e486bf475a574a4df8808dc614c.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://music/::1768569740
-::res://music/soundEffect/::1768569759
+::res://music/soundEffect/::1768571865
 ambient_wind.wav::AudioStreamWAV::670121856218671041::1762992622::1768571865::1::::<><><>0<>0<>21945b6279c2816c3a24a61077c4d782<>res://.godot/imported/ambient_wind.wav-4f95962608fb48c33cc5cf7fa3dc5f22.sample::
 clock_ticking.wav::AudioStreamWAV::5507150770492902623::1762992622::1768571865::1::::<><><>0<>0<>5f43b579e1dabdeb2778bc57c0bcf577<>res://.godot/imported/clock_ticking.wav-23936b4dc4e784e5421dffe942c7df18.sample::
 clock_tick_only.wav::AudioStreamWAV::6282250758848298012::1762992622::1768571865::1::::<><><>0<>0<>01f3245164e58732a024f7eff029ce4d<>res://.godot/imported/clock_tick_only.wav-283541d53cda3ecca8ad02bf4a020183.sample::
@@ -411,17 +414,19 @@ clock_tock_only.wav::AudioStreamWAV::2380335833785994932::1762992622::1768571865
 door_close.wav::AudioStreamWAV::2326836726484350480::1762992622::1768571865::1::::<><><>0<>0<>ee9a00347d59a2602e1960dd7b90ad38<>res://.godot/imported/door_close.wav-1df185171684ed8d49eef0f13f950ea9.sample::
 door_knock.wav::AudioStreamWAV::8857685271221805270::1762992622::1768571865::1::::<><><>0<>0<>86e947a3665398d07e40ebe24646bb43<>res://.godot/imported/door_knock.wav-8946f7ada1c728cc1b843f82ff657677.sample::
 door_open.wav::AudioStreamWAV::4618483030686872962::1762992622::1768571865::1::::<><><>0<>0<>3043fd504b6746c7a532abfd5b7ea518<>res://.godot/imported/door_open.wav-9aed51d301c9a076110e65fd20c63aff.sample::
-::res://npc/::1768384257
+::res://New folder/::1768572395
+::res://npc/::1768638222
 laras.gd::GDScript::4262554182305204023::1768135534::0::1::::<>CharacterBody2D<><>0<>0<><>::
-npc_controller.gd::GDScript::5761604783617156969::1768136177::0::1::::<>Node2D<><>0<>0<><>::
-NPC_IbuPink.tscn::PackedScene::5014273020658225426::1768383925::0::1::::<><><>0<>0<><>::uid://cpcviehuxvw4n::::res://npc/npc_ibu_pink.gd
+npc_controller.gd::GDScript::5761604783617156969::1768574305::0::1::::<>Node2D<><>0<>0<><>::
+NPC_IbuPink.tscn::PackedScene::5014273020658225426::1768573481::0::1::::<><><>0<>0<><>::
 npc_ibu_pink.gd::GDScript::5831092342511469847::1766753144::0::1::::<>Node2D<><>0<>0<><>::
-npc_laras.gd::GDScript::3340337552829401097::1767841236::0::1::::<>Node2D<><>0<>0<><>::
-NPC_Laras.tscn::PackedScene::914502272655944434::1768384257::0::1::::<><><>0<>0<><>::uid://b1y2v6f8bn6kp::::res://npc/laras.gd<>uid://bb313rprv1r4v::::res://Asset/character/laras/laras.png
-NPC_PakBeni.tscn::PackedScene::9989546640437346::1766753058::0::1::::<><><>0<>0<><>::
+NPC_Laras.tscn::PackedScene::914502272655944434::1768637558::0::1::::<><><>0<>0<><>::uid://b1y2v6f8bn6kp::::res://npc/laras.gd<>uid://bb313rprv1r4v::::res://Asset/character/laras/laras.png
+NPC_PakBeni.tscn::PackedScene::9989546640437346::1768573480::0::1::::<><><>0<>0<><>::uid://xh3kt1i6nag3::::res://npc/PakBeni.gd
 path_2d.gd::GDScript::680374635570334986::1767754906::0::1::::<>Path2D<><>0<>0<><>::
 path_follow_2d.gd::GDScript::659448160463846990::1768133711::0::1::::<>RefCounted<><>0<>0<><>::
 path_npc.gd::GDScript::9019451602368823106::1768135534::0::1::::<>Path2D<><>0<>0<><>::
+PakBeni.gd::GDScript::1630513020203661760::1768573478::0::1::::<>CharacterBody2D<><>0<>0<><>::
+interactLaras.gd::GDScript::2395884283745573411::1768638222::0::1::::<>Area2D<><>0<>0<><>::
 ::res://property/::1768383910
 door.gd::GDScript::3940797545735580352::1768383910::0::1::::<>Area2D<><>0<>0<><>::
 door.tscn::PackedScene::5073191202678767892::1768383828::0::1::::<><><>0<>0<><>::uid://bwe7mh7neyat1::::res://property/door.gd

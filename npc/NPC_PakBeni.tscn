@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://e3r5qudgwi1"]
+[gd_scene load_steps=3 format=3 uid="uid://e3r5qudgwi1"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://xh3kt1i6nag3" path="res://npc/PakBeni.gd" id="1_uya8m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i52bo"]
+
+[node name="PakBeni" type="CharacterBody2D"]
+script = ExtResource("1_uya8m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_i52bo")
+
+[node name="anggapOrang" type="ColorRect" parent="."]
+offset_left = -11.0
+offset_top = -15.0
+offset_right = 9.0
+offset_bottom = 14.0
+color = Color(0.12760115, 0.14352119, 0.43322304, 1)

@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://h1n485pd4cvq"]
+[gd_scene load_steps=2 format=3 uid="uid://h1n485pd4cvq"]
+
+[ext_resource type="PackedScene" uid="uid://ch0txgx1ckrlc" path="res://toko.tscn" id="1_3sd7o"]
 
 [node name="Scene1" type="Node2D"]
+
+[node name="main_toko" parent="." instance=ExtResource("1_3sd7o")]
+position = Vector2(-292, 50)
