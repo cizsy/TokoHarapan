@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @export var speed := 150.0
+@export var  file_dialog: DialogueResource
+
 
 var last_dir := Vector2.DOWN
 
@@ -87,3 +89,7 @@ func _on_interaction_area_area_entered(area: Area2D) -> void:
 func _on_interaction_area_area_exited(area: Area2D) -> void:
 	if current_interactable == area:
 		current_interactable = null
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		DialogueManager.show_example_dialogue_balloon(file_dialog, "start")

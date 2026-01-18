@@ -16,3 +16,11 @@ offset_top = -15.0
 offset_right = 9.0
 offset_bottom = 14.0
 color = Color(0.12760115, 0.14352119, 0.43322304, 1)
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = -17.0
+offset_top = -30.0
+offset_right = 59.75
+offset_bottom = 1.0
+scale = Vector2(0.45, 0.45)
+text = "pak beni"

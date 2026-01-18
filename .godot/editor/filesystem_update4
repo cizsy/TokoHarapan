@@ -1,8 +1,4 @@
+res://main.tscn
 res://player.gd
 res://toko.tscn
-res://main.tscn
-res://property/door.gd
-res://keRumah.gd
-res://property/door.tscn
-res://rumah.tscn
-res://npc/NPC_Laras.tscn
+res://npc/NPC_PakBeni.tscn

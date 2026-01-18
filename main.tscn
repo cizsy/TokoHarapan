@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://di3psp00bdknx"]
+[gd_scene load_steps=27 format=3 uid="uid://di3psp00bdknx"]
 
 [ext_resource type="Script" uid="uid://c4bi3hejd50rs" path="res://player.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://b2n0ni3ctyr3g" path="res://Asset/character/raka/xzca.png" id="2_272bh"]
+[ext_resource type="Resource" uid="uid://bkj6jqo75ifj5" path="res://dialogue/scene1.dialogue" id="2_kek77"]
 [ext_resource type="Texture2D" uid="uid://gl6ixfcbl5hf" path="res://Asset/character/raka/raka_left1.png" id="3_5vw27"]
 [ext_resource type="Texture2D" uid="uid://uj064t71aqeq" path="res://Asset/character/raka/raka_right.png" id="4_kek77"]
 [ext_resource type="Texture2D" uid="uid://bf3s0fbe0rbob" path="res://Asset/character/raka/raka_up.png" id="5_4c57u"]
@@ -178,6 +179,7 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_ig7tw")
+file_dialog = ExtResource("2_kek77")
 metadata/_edit_horizontal_guides_ = [-35.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

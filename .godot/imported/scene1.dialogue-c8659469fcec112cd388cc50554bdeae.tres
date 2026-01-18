@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_r16q5"]
+
+[resource]
+script = ExtResource("1_r16q5")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Pak Beni", "Raka")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Pak Beni",
+&"id": "1",
+&"next_id": "2",
+&"text": "Ini kuncinya, Ka. Agak macet kalau diputer, harus diangkat dikit.",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Raka",
+&"id": "2",
+&"next_id": "3",
+&"text": "Makasih, Pak. Bapak besok jadi bantu jaga?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Pak Beni",
+&"id": "3",
+&"next_id": "4",
+&"text": "Iya, sif pagi kayak biasa pas Bapakmu masih ada. Kamu fokus sekolah dulu. Pas pulang sekolah, baru kamu yang jaga.",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Pak Beni",
+&"id": "4",
+&"next_id": "5",
+&"text": "Tapi liat tuh... Rak masih kosong. Kardus-kardus di pojok itu isinya cuma barang sisa.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Raka",
+&"id": "5",
+&"next_id": "6",
+&"text": "Duit peninggalan Ayah cuma cukup buat bayar listrik bulan ini, Pak. Belum bisa belanja stok banyak.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Pak Beni",
+&"id": "6",
+&"next_id": "8",
+&"text": "Ya sudah. Jalanin dulu seadanya. Bapak pulang dulu ya.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"type": ""
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Pak Beni: Ini kuncinya, Ka. Agak macet kalau diputer, harus diangkat dikit.
+Raka: Makasih, Pak. Bapak besok jadi bantu jaga?
+Pak Beni: Iya, sif pagi kayak biasa pas Bapakmu masih ada. Kamu fokus sekolah dulu. Pas pulang sekolah, baru kamu yang jaga.
+Pak Beni: Tapi liat tuh... Rak masih kosong. Kardus-kardus di pojok itu isinya cuma barang sisa.
+Raka: Duit peninggalan Ayah cuma cukup buat bayar listrik bulan ini, Pak. Belum bisa belanja stok banyak.
+Pak Beni: Ya sudah. Jalanin dulu seadanya. Bapak pulang dulu ya.
+
+=> END"
+metadata/dialogue_manager_version = "3.9.1"

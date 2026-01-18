@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://ch0txgx1ckrlc"]
+[gd_scene load_steps=26 format=4 uid="uid://ch0txgx1ckrlc"]
 
 [ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://main.tscn" id="1_epcg3"]
 [ext_resource type="Texture2D" uid="uid://cfufe5jufyj6s" path="res://Asset/rumah/TopDownHouse_FloorsAndWalls.png" id="4_6ien3"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://coc713dca6smr" path="res://npc/npc_controller.gd" id="9_5n7yi"]
 [ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://npc/NPC_Laras.tscn" id="9_q41pj"]
 [ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://stop_point.gd" id="10_7fk30"]
+[ext_resource type="PackedScene" uid="uid://e3r5qudgwi1" path="res://npc/NPC_PakBeni.tscn" id="12_sc4nx"]
 [ext_resource type="Script" uid="uid://duw744a6s631n" path="res://keRumah.gd" id="12_u3vfw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8oxt"]
@@ -501,7 +502,7 @@ size = Vector2(48, 25)
 [node name="player" parent="." instance=ExtResource("1_epcg3")]
 z_index = 3
 y_sort_enabled = true
-position = Vector2(12, 130)
+position = Vector2(534, 190)
 speed = 120.0
 
 [node name="furniture" type="Node2D" parent="."]
@@ -645,7 +646,7 @@ rotation = -1.6030432
 [node name="Laras" parent="npc_controller" instance=ExtResource("9_q41pj")]
 z_index = 3
 y_sort_enabled = true
-position = Vector2(-34, -1)
+position = Vector2(401, 87)
 
 [node name="interactionArea" type="Area2D" parent="."]
 z_index = 3
@@ -654,6 +655,9 @@ script = ExtResource("12_u3vfw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactionArea"]
 position = Vector2(569, 192)
 shape = SubResource("RectangleShape2D_sc4nx")
+
+[node name="PakBeni" parent="." instance=ExtResource("12_sc4nx")]
+position = Vector2(570, 121)
 
 [connection signal="area_entered" from="interactionArea" to="player" method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="interactionArea" to="player" method="_on_interaction_area_area_exited"]
