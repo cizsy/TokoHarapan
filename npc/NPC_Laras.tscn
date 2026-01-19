@@ -180,7 +180,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6wlgv"]
-radius = 18.439089
+radius = 23.0
 
 [node name="Laras" type="CharacterBody2D"]
 script = ExtResource("1_7vac5")

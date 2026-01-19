@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://e3r5qudgwi1"]
+[gd_scene load_steps=4 format=3 uid="uid://e3r5qudgwi1"]
 
 [ext_resource type="Script" uid="uid://xh3kt1i6nag3" path="res://npc/PakBeni.gd" id="1_uya8m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i52bo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uya8m"]
+radius = 34.20526
 
 [node name="PakBeni" type="CharacterBody2D"]
 script = ExtResource("1_uya8m")
@@ -24,3 +27,7 @@ offset_right = 59.75
 offset_bottom = 1.0
 scale = Vector2(0.45, 0.45)
 text = "pak beni"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uya8m")
+disabled = true

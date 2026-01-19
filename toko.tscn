@@ -657,7 +657,7 @@ position = Vector2(569, 192)
 shape = SubResource("RectangleShape2D_sc4nx")
 
 [node name="PakBeni" parent="." instance=ExtResource("12_sc4nx")]
-position = Vector2(570, 121)
+position = Vector2(452, 111)
 
 [connection signal="area_entered" from="interactionArea" to="player" method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="interactionArea" to="player" method="_on_interaction_area_area_exited"]
