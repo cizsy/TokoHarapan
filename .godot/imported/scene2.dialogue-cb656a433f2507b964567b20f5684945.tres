@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vnycu"]
+
+[resource]
+script = ExtResource("1_vnycu")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Laras", "Raka")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Laras",
+&"id": "1",
+&"next_id": "2",
+&"text": "Mas, tadi aku liat Pak Beni pulang. Berarti besok toko resmi buka?",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Raka",
+&"id": "2",
+&"next_id": "3",
+&"text": "Iya. Tapi ya gitu... barangnya dikit.",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Laras",
+&"id": "3",
+&"next_id": "4",
+&"text": "Nggak papa! Sekolahku aman kok, KIP udah cair dan SPP gratis. Uang jajan aku juga masih ada sisa.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"text": "Besok pulang sekolah aku langsung ke toko ya? Aku mau jaga toko, siapa tau ada bocil lucu datang ke toko!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Raka",
+&"id": "5",
+&"next_id": "6",
+&"text": "Boleh, tapi jangan capek-capek. Kamu duduk aja.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Laras",
+&"id": "6",
+&"next_id": "7",
+&"text": "Siap Bos! Yuk tidur, besokkan upacara.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Laras: Mas, tadi aku liat Pak Beni pulang. Berarti besok toko resmi buka?
+Raka: Iya. Tapi ya gitu... barangnya dikit.
+Laras: Nggak papa! Sekolahku aman kok, KIP udah cair dan SPP gratis. Uang jajan aku juga masih ada sisa.
+Besok pulang sekolah aku langsung ke toko ya? Aku mau jaga toko, siapa tau ada bocil lucu datang ke toko!
+Raka: Boleh, tapi jangan capek-capek. Kamu duduk aja.
+Laras: Siap Bos! Yuk tidur, besokkan upacara.
+=> END"
+metadata/dialogue_manager_version = "3.9.1"

@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jt55i"]
+
+[resource]
+script = ExtResource("1_jt55i")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Raka", "**[SYSTEM CHOICE")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Raka",
+&"id": "1",
+&"next_id": "2",
+&"text": "5 Juta... Cukup buat beli stok beras sama minyak satu pickup.",
+&"type": "dialogue"
+},
+"10": {
+&"id": "10",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"id": "11",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"text": "Kalau barang laku, bulan depan langsung lunas. Bunganya 0% kan?",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"next_id": "5",
+&"text": "Tapi... Pak Beni pasti ngelarang.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"type": ""
+},
+"5": {
+&"character": "**[SYSTEM CHOICE",
+&"id": "5",
+&"next_id": "7",
+&"text": "Tentukan Nasibmu]**",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"type": ""
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"text": "1. **[AMBIL PINJAMAN]** -> Aku harus ambil risiko. Demi Laras, demi Toko.",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"next_id": "10",
+&"text": "2. **[TANYA PAK BENI]** -> Aku takut salah langkah. Tanya Pak Beni dulu deh.",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"type": ""
+}
+}
+raw_text = "~ start
+Raka: 5 Juta... Cukup buat beli stok beras sama minyak satu pickup.
+Kalau barang laku, bulan depan langsung lunas. Bunganya 0% kan?
+Tapi... Pak Beni pasti ngelarang.
+
+**[SYSTEM CHOICE: Tentukan Nasibmu]**
+
+1. **[AMBIL PINJAMAN]** -> Aku harus ambil risiko. Demi Laras, demi Toko.
+2. **[TANYA PAK BENI]** -> Aku takut salah langkah. Tanya Pak Beni dulu deh.
+
+=> END"
+metadata/dialogue_manager_version = "3.9.1"

@@ -8,8 +8,17 @@
 shape = SubResource("CapsuleShape2D_fjwil")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -11.0
+offset_left = -10.0
 offset_top = -14.0
-offset_right = 10.0
+offset_right = 11.0
 offset_bottom = 16.0
 color = Color(1, 0.7019608, 1, 1)
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = -14.999997
+offset_top = -33.000004
+offset_right = 45.937504
+offset_bottom = -5.000004
+scale = Vector2(0.5338764, 0.5272272)
+theme_override_font_sizes/font_size = 14
+text = "Ibu2"

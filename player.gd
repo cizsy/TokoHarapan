@@ -93,3 +93,4 @@ func _on_interaction_area_area_exited(area: Area2D) -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		DialogueManager.show_example_dialogue_balloon(file_dialog, "start")
+	

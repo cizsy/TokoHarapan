@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1yuw1"]
+
+[resource]
+script = ExtResource("1_1yuw1")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Pak Beni", "Raka", "Raka (Sendirian di Kasir)")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Pak Beni",
+&"id": "1",
+&"next_id": "2",
+&"text": "Laras kakinya pincang tadi pas berangkat sekolah. Katanya kejatuhan kardus?",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Raka",
+&"id": "2",
+&"next_id": "3",
+&"text": "Iya Pak. Saya ngerasa gagal. Toko sepi, barang kosong, adik malah sakit.",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Raka",
+&"id": "3",
+&"next_id": "4",
+&"text": "Pak, Supplier yang dulu kenal Ayah... bisa nggak kasih utang barang dulu?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Pak Beni",
+&"id": "4",
+&"next_id": "5",
+&"text": "Bapak udah tanya kemarin. Mereka nggak mau, Ka. Utang lama Ayahmu belum lunas. Mereka minta Cash kalau mau restock barang baru.",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Raka",
+&"id": "5",
+&"next_id": "6",
+&"text": "Harus Cash ya...",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Raka (Sendirian di Kasir)",
+&"id": "6",
+&"next_id": "7",
+&"text": "Aku butuh uang. Buat beli stok Beras & Minyak. Kalau stok ada, pembeli datang. Kalau pembeli datang, aku bisa gaji orang buat bantu angkut-angkut. Laras aman.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Pak Beni: Laras kakinya pincang tadi pas berangkat sekolah. Katanya kejatuhan kardus?
+Raka: Iya Pak. Saya ngerasa gagal. Toko sepi, barang kosong, adik malah sakit.
+Raka: Pak, Supplier yang dulu kenal Ayah... bisa nggak kasih utang barang dulu?
+Pak Beni: Bapak udah tanya kemarin. Mereka nggak mau, Ka. Utang lama Ayahmu belum lunas. Mereka minta Cash kalau mau restock barang baru.
+Raka: Harus Cash ya...
+Raka (Sendirian di Kasir): Aku butuh uang. Buat beli stok Beras & Minyak. Kalau stok ada, pembeli datang. Kalau pembeli datang, aku bisa gaji orang buat bantu angkut-angkut. Laras aman.
+=> END"
+metadata/dialogue_manager_version = "3.9.1"

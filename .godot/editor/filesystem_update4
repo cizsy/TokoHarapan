@@ -1,4 +1,3 @@
-res://main.tscn
 res://player.gd
-res://toko.tscn
-res://npc/NPC_PakBeni.tscn
+res://npc/NPC_IbuPink.tscn
+res://npc/NPC_Laras.tscn
