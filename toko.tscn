@@ -490,12 +490,12 @@ radius = 3.0
 
 [sub_resource type="Curve2D" id="Curve2D_d72r0"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 494, 58)
+"points": PackedVector2Array(0, 0, 0, 0, 1097, 273, 0, 0, 0, 0, 1098, 210, 0, 0, 0, 0, 1097, 174, 0, 0, 0, 0, 1266, 175, 0, 0, 0, 0, 1266, 167, 0, 0, 0, 0, 1098, 168, 0, 0, 0, 0, 1099, 147, 0, 0, 0, 0, 1097, 240)
 }
-point_count = 1
+point_count = 8
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sc4nx"]
-size = Vector2(48, 25)
+size = Vector2(48, 18)
 
 [node name="main_toko" type="Node2D"]
 
@@ -638,8 +638,8 @@ curve = SubResource("Curve2D_d72r0")
 script = ExtResource("8_4b01b")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="npc_controller/path_NPC"]
-position = Vector2(566, 207)
-rotation = -1.6030432
+position = Vector2(1097, 273)
+rotation = -1.5549246
 
 [node name="Timer" type="Timer" parent="npc_controller/path_NPC"]
 
@@ -653,7 +653,7 @@ z_index = 3
 script = ExtResource("12_u3vfw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interactionArea"]
-position = Vector2(569, 192)
+position = Vector2(572, 195)
 shape = SubResource("RectangleShape2D_sc4nx")
 
 [node name="PakBeni" parent="." instance=ExtResource("12_sc4nx")]

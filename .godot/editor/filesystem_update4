@@ -1,5 +1,2 @@
-res://player.gd
-res://npc/NPC_IbuPink.tscn
-res://npc/NPC_Laras.tscn
 res://toko.tscn
-res://npc/NPC_PakBeni.tscn
+res://property/door.tscn

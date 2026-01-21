@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cejqyn5tdygue"]
+[gd_scene load_steps=4 format=3 uid="uid://cejqyn5tdygue"]
 
 [ext_resource type="Script" uid="uid://bwe7mh7neyat1" path="res://property/door.gd" id="1_0phs7"]
+[ext_resource type="AudioStream" uid="uid://b62h0gkklyu5g" path="res://music/soundEffect/door_open.wav" id="2_xtgn2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y5njw"]
 size = Vector2(27, 15)
@@ -12,3 +13,6 @@ script = ExtResource("1_0phs7")
 position = Vector2(72.5, -8)
 scale = Vector2(0.99999994, 1)
 shape = SubResource("RectangleShape2D_y5njw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_xtgn2")
