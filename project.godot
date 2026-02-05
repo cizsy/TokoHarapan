@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Toko Harapan"
-run/main_scene="uid://di3psp00bdknx"
+run/main_scene="uid://cvv2yvj3g1t8j"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Asset/icon.svg"
 

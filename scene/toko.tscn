@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=4 uid="uid://ch0txgx1ckrlc"]
 
-[ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://main.tscn" id="1_epcg3"]
+[ext_resource type="PackedScene" uid="uid://di3psp00bdknx" path="res://scene/Player.tscn" id="1_epcg3"]
 [ext_resource type="Texture2D" uid="uid://cfufe5jufyj6s" path="res://Asset/rumah/TopDownHouse_FloorsAndWalls.png" id="4_6ien3"]
 [ext_resource type="Texture2D" uid="uid://d2ivuf42gpfjd" path="res://Asset/toko/rak kosong2.png" id="4_7ofxu"]
 [ext_resource type="Texture2D" uid="uid://bo14ryng52axe" path="res://Asset/toko/rak kosong1.png" id="4_elsha"]
@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://bmbqphvpxngv3" path="res://Asset/toko/rak depan kasir.png" id="8_sc4nx"]
 [ext_resource type="Script" uid="uid://coc713dca6smr" path="res://npc/npc_controller.gd" id="9_5n7yi"]
 [ext_resource type="PackedScene" uid="uid://na8yo7rkcvy5" path="res://npc/NPC_Laras.tscn" id="9_q41pj"]
-[ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://stop_point.gd" id="10_7fk30"]
+[ext_resource type="Script" uid="uid://ctfwy5h6fbe5g" path="res://script/stop_point.gd" id="10_7fk30"]
 [ext_resource type="PackedScene" uid="uid://e3r5qudgwi1" path="res://npc/NPC_PakBeni.tscn" id="12_sc4nx"]
-[ext_resource type="Script" uid="uid://duw744a6s631n" path="res://keRumah.gd" id="12_u3vfw"]
+[ext_resource type="Script" uid="uid://duw744a6s631n" path="res://script/keRumah.gd" id="12_u3vfw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8oxt"]
 size = Vector2(72, 43.5)
@@ -658,6 +658,15 @@ shape = SubResource("RectangleShape2D_sc4nx")
 
 [node name="PakBeni" parent="." instance=ExtResource("12_sc4nx")]
 position = Vector2(452, 111)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -4
+offset_left = -9.0
+offset_top = -122.0
+offset_right = 957.0
+offset_bottom = 373.0
+mouse_filter = 2
+color = Color(0.14767197, 0.14767176, 0.14767185, 1)
 
 [connection signal="area_entered" from="interactionArea" to="player" method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="interactionArea" to="player" method="_on_interaction_area_area_exited"]

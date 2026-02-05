@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://lmeuun180tu0"]
+
+[ext_resource type="Script" uid="uid://jo7oxkdkm5ew" path="res://script/main_menu.gd" id="1_3er1b"]
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3er1b")
+
+[node name="newgame" type="Button" parent="."]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 228.0
+offset_right = 791.0
+offset_bottom = 289.0
+text = "New Game"
+
+[node name="reload" type="Button" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 324.0
+offset_right = 793.0
+offset_bottom = 385.0
+text = "Reload"
+
+[node name="settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 425.0
+offset_right = 793.0
+offset_bottom = 486.0
+text = "Settings"
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 506.0
+offset_right = 793.0
+offset_bottom = 567.0
+text = "Exit"
+
+[node name="JudulGame" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 38.0
+offset_right = 916.0
+offset_bottom = 196.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1165.0
+offset_bottom = 646.0
+mouse_filter = 2
+color = Color(0.58822906, 0.72239995, 0.21072024, 1)
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="newgame" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

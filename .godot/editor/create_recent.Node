@@ -1,15 +1,14 @@
+TextEdit
+ColorRect
+Control
+MenuButton
+Button
+VBoxContainer
 AudioStreamPlayer2D
 CollisionShape2D
 LineEdit
 LineEdit      - Matches the "text" keyword.
-TextEdit
 StaticBody2D
 Area2D
 Node2D
 CharacterBody2D
-ColorRect
-CanvasModulate
-PathFollow2D
-Marker2D
-Timer
-Path2D

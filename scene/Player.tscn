@@ -1,77 +1,77 @@
 [gd_scene load_steps=27 format=3 uid="uid://di3psp00bdknx"]
 
-[ext_resource type="Script" uid="uid://c4bi3hejd50rs" path="res://player.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://b2n0ni3ctyr3g" path="res://Asset/character/raka/xzca.png" id="2_272bh"]
-[ext_resource type="Resource" uid="uid://bkj6jqo75ifj5" path="res://dialogue/scene1.dialogue" id="2_kek77"]
-[ext_resource type="Texture2D" uid="uid://gl6ixfcbl5hf" path="res://Asset/character/raka/raka_left1.png" id="3_5vw27"]
-[ext_resource type="Texture2D" uid="uid://uj064t71aqeq" path="res://Asset/character/raka/raka_right.png" id="4_kek77"]
-[ext_resource type="Texture2D" uid="uid://bf3s0fbe0rbob" path="res://Asset/character/raka/raka_up.png" id="5_4c57u"]
-[ext_resource type="Texture2D" uid="uid://87w30i7hasl5" path="res://Asset/character/raka/xzca2.png" id="6_efxa6"]
-[ext_resource type="Texture2D" uid="uid://dqf0i1ib58aa" path="res://Asset/character/raka/raka_left2.png" id="7_dg77c"]
-[ext_resource type="Texture2D" uid="uid://c3fhs60lmy2aa" path="res://Asset/UI real/interact.png" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://c4bi3hejd50rs" path="res://script/player.gd" id="1_63jwq"]
+[ext_resource type="Resource" uid="uid://bkj6jqo75ifj5" path="res://dialogue/scene1.dialogue" id="2_r6ll3"]
+[ext_resource type="Texture2D" uid="uid://b2n0ni3ctyr3g" path="res://Asset/character/raka/xzca.png" id="3_oqto2"]
+[ext_resource type="Texture2D" uid="uid://gl6ixfcbl5hf" path="res://Asset/character/raka/raka_left1.png" id="4_l60v7"]
+[ext_resource type="Texture2D" uid="uid://uj064t71aqeq" path="res://Asset/character/raka/raka_right.png" id="5_xf0yl"]
+[ext_resource type="Texture2D" uid="uid://bf3s0fbe0rbob" path="res://Asset/character/raka/raka_up.png" id="6_c2vjh"]
+[ext_resource type="Texture2D" uid="uid://87w30i7hasl5" path="res://Asset/character/raka/xzca2.png" id="7_w11jy"]
+[ext_resource type="Texture2D" uid="uid://dqf0i1ib58aa" path="res://Asset/character/raka/raka_left2.png" id="8_stxrh"]
+[ext_resource type="Texture2D" uid="uid://c3fhs60lmy2aa" path="res://Asset/UI real/interact.png" id="9_yk8u4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_272bh"]
 radius = 15.625
 height = 68.75
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycdy4"]
-atlas = ExtResource("2_272bh")
+atlas = ExtResource("3_oqto2")
 region = Rect2(0, 0, 610, 542)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w48qg"]
-atlas = ExtResource("3_5vw27")
+atlas = ExtResource("4_l60v7")
 region = Rect2(0, 553, 513, 553)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vivmo"]
-atlas = ExtResource("4_kek77")
+atlas = ExtResource("5_xf0yl")
 region = Rect2(0, 0, 504, 580)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2cqfq"]
-atlas = ExtResource("5_4c57u")
+atlas = ExtResource("6_c2vjh")
 region = Rect2(0, 0, 504, 554)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yaehf"]
-atlas = ExtResource("2_272bh")
+atlas = ExtResource("3_oqto2")
 region = Rect2(0, 542, 610, 542)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_074og"]
-atlas = ExtResource("6_efxa6")
+atlas = ExtResource("7_w11jy")
 region = Rect2(0, 0, 463, 513)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cegan"]
-atlas = ExtResource("6_efxa6")
+atlas = ExtResource("7_w11jy")
 region = Rect2(0, 513, 463, 513)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82xsv"]
-atlas = ExtResource("3_5vw27")
+atlas = ExtResource("4_l60v7")
 region = Rect2(0, 0, 513, 553)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_getpj"]
-atlas = ExtResource("7_dg77c")
+atlas = ExtResource("8_stxrh")
 region = Rect2(0, 0, 520, 513)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ryguw"]
-atlas = ExtResource("4_kek77")
+atlas = ExtResource("5_xf0yl")
 region = Rect2(504, 0, 504, 580)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d13ii"]
-atlas = ExtResource("4_kek77")
+atlas = ExtResource("5_xf0yl")
 region = Rect2(1008, 0, 504, 580)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1u8w0"]
-atlas = ExtResource("4_kek77")
+atlas = ExtResource("5_xf0yl")
 region = Rect2(1512, 0, 504, 580)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0odxb"]
-atlas = ExtResource("5_4c57u")
+atlas = ExtResource("6_c2vjh")
 region = Rect2(504, 0, 504, 554)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lswn8"]
-atlas = ExtResource("5_4c57u")
+atlas = ExtResource("6_c2vjh")
 region = Rect2(1008, 0, 504, 554)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6jrf"]
-atlas = ExtResource("5_4c57u")
+atlas = ExtResource("6_c2vjh")
 region = Rect2(1512, 0, 504, 554)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lswn8"]
@@ -178,8 +178,8 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
-script = ExtResource("1_ig7tw")
-file_dialog = ExtResource("2_kek77")
+script = ExtResource("1_63jwq")
+file_dialog = ExtResource("2_r6ll3")
 metadata/_edit_horizontal_guides_ = [-35.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -200,4 +200,4 @@ zoom = Vector2(2, 2)
 [node name="InteractIcon" type="Sprite2D" parent="."]
 position = Vector2(34, -31)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_5vw27")
+texture = ExtResource("9_yk8u4")

@@ -1,2 +1,15 @@
+res://main_menu.tscn
+res://main_menu.gd
+res://rumah.tscn
 res://toko.tscn
-res://property/door.tscn
+res://main.gd
+res://scene_1.tscn
+res://scene/toko.tscn
+res://scene/Player.tscn
+res://scene/main_menu.tscn
+res://scene/main_ui.tscn
+res://property/door.gd
+res://script/keRumah.gd
+res://script/main_menu.gd
+res://npc/path_2d.gd
+res://scene/main.tscn
